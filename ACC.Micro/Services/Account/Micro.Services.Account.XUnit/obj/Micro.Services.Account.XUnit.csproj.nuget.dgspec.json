@@ -1,0 +1,467 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account.XUnit\\Micro.Services.Account.XUnit.csproj": {}
+  },
+  "projects": {
+    "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\ACC.Bus.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\ACC.Bus.Common.csproj",
+        "projectName": "ACC.Bus.Common",
+        "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\ACC.Bus.Common.csproj",
+        "packagesPath": "C:\\Users\\DEV-01\\.nuget\\packages\\",
+        "outputPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DEV-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj",
+        "projectName": "Account.Application",
+        "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj",
+        "packagesPath": "C:\\Users\\DEV-01\\.nuget\\packages\\",
+        "outputPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DEV-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Domain\\Account.Domain.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Domain\\Account.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.17.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Domain\\Account.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Domain\\Account.Domain.csproj",
+        "projectName": "Account.Domain",
+        "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Domain\\Account.Domain.csproj",
+        "packagesPath": "C:\\Users\\DEV-01\\.nuget\\packages\\",
+        "outputPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DEV-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.17.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\Account.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\Account.Infrastructure.csproj",
+        "projectName": "Account.Infrastructure",
+        "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\Account.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DEV-01\\.nuget\\packages\\",
+        "outputPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DEV-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account.XUnit\\Micro.Services.Account.XUnit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account.XUnit\\Micro.Services.Account.XUnit.csproj",
+        "projectName": "Micro.Services.Account.XUnit",
+        "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account.XUnit\\Micro.Services.Account.XUnit.csproj",
+        "packagesPath": "C:\\Users\\DEV-01\\.nuget\\packages\\",
+        "outputPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account.XUnit\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DEV-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj"
+              },
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\Account.Infrastructure.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\Account.Infrastructure.csproj"
+              },
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account\\Micro.Services.Account.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account\\Micro.Services.Account.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account\\Micro.Services.Account.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account\\Micro.Services.Account.csproj",
+        "projectName": "Micro.Services.Account",
+        "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account\\Micro.Services.Account.csproj",
+        "packagesPath": "C:\\Users\\DEV-01\\.nuget\\packages\\",
+        "outputPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Micro.Services.Account\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DEV-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\ACC.Bus.Common.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\ACC.Bus.Common.csproj"
+              },
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Application\\Account.Application.csproj"
+              },
+              "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\Account.Infrastructure.csproj": {
+                "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Infrastructure\\Account.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

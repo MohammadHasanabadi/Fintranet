@@ -1,0 +1,12 @@
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\bin\Debug\net6.0\Account.Domain.deps.json
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\bin\Debug\net6.0\Account.Domain.dll
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\bin\Debug\net6.0\Account.Domain.pdb
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\Account.Domain.csproj.AssemblyReference.cache
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\Account.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\Account.Domain.AssemblyInfoInputs.cache
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\Account.Domain.AssemblyInfo.cs
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\Account.Domain.csproj.CoreCompileInputs.cache
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\Account.Domain.dll
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\refint\Account.Domain.dll
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\Account.Domain.pdb
+D:\repository\Diana\ACC.Backend\Services\Account\Account.Domain\obj\Debug\net6.0\ref\Account.Domain.dll

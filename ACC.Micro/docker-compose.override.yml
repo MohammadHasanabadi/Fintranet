@@ -1,0 +1,54 @@
+version: '3.4'
+
+services:
+  mongodb:
+   container_name: mongodb
+   restart: always
+   ports:
+      - "27017:27017"
+   volumes:
+      - "mongo_data:/data/db"
+
+  micro.services.acc:
+    container_name: micro.services.acc
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings:ConnectionString=mongodb://mongodb:27017"
+    depends_on: 
+      - mongodb
+    ports:
+      - "8000:80"
+
+  sqltest:
+    container_name: sql
+    environment:
+        SA_PASSWORD: "123456MiM"
+        ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+        - "1433:1433"  
+
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    ports:
+        - "5672:5672"
+        - "15672:15672"
+
+  micro.services.store:
+    container_name: micro.service.store
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8002:80"
+
+  micro.services.account:
+    container_name: micro.services.account
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings:ConnectionString=mongodb://mongodb:27017"
+    depends_on: 
+      - mongodb
+    ports:
+      - "8003:80"
+

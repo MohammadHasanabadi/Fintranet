@@ -1,0 +1,82 @@
+version: '3.4'
+
+services:
+  micro.services.acc:
+    image: microservicesacc:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Micro.Services.ACC"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_micro.services.acc$
+    volumes:
+      - D:\repository\Diana\ACC.Backend\ACC.Micro\Services\ACC\Micro.Services.ACC:/app
+      - D:\repository\Diana\ACC.Backend\ACC.Micro:/src
+      - C:\Users\DEV-01\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_micro.services.acc$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_micro.services.acc$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  micro.services.account:
+    image: microservicesaccount:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Micro.Services.Account"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_micro.services.account$
+    volumes:
+      - D:\repository\Diana\ACC.Backend\ACC.Micro\Services\Account\Micro.Services.Account:/app
+      - D:\repository\Diana\ACC.Backend\ACC.Micro:/src
+      - C:\Users\DEV-01\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_micro.services.account$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_micro.services.account$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  micro.services.store:
+    image: microservicesstore:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Micro.Services.Store"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_micro.services.store$
+    volumes:
+      - D:\repository\Diana\ACC.Backend\ACC.Micro\Services\Store\Micro.Services.Store:/app
+      - D:\repository\Diana\ACC.Backend\ACC.Micro:/src
+      - C:\Users\DEV-01\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_micro.services.store$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_micro.services.store$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

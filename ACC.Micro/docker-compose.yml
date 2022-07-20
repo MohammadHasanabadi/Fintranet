@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  mongodb:
+    image: mongo
+   
+  micro.services.acc:
+    image: ${DOCKER_REGISTRY-}microservicesacc
+    build:
+      context: .
+      dockerfile: Services/ACC/Micro.Services.ACC/Dockerfile
+
+  micro.services.account:
+    image: ${DOCKER_REGISTRY-}microservicesaccount
+    build:
+      context: .
+      dockerfile: Services/Account/Micro.Services.Account/Dockerfile
+
+  micro.services.store:
+    image: ${DOCKER_REGISTRY-}microservicesstore
+    build:
+      context: .
+      dockerfile: Services/Store/Micro.Services.Store/Dockerfile
+
+  sqltest:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+
+volumes:
+  mongo_data:
+
+
+

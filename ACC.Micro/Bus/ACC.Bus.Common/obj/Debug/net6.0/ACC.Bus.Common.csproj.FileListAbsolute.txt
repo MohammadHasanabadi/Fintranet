@@ -1,0 +1,12 @@
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\bin\Debug\net6.0\ACC.Bus.Common.deps.json
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\bin\Debug\net6.0\ACC.Bus.Common.dll
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\bin\Debug\net6.0\ACC.Bus.Common.pdb
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ACC.Bus.Common.csproj.AssemblyReference.cache
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ACC.Bus.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ACC.Bus.Common.AssemblyInfoInputs.cache
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ACC.Bus.Common.AssemblyInfo.cs
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ACC.Bus.Common.csproj.CoreCompileInputs.cache
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ACC.Bus.Common.dll
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\refint\ACC.Bus.Common.dll
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ACC.Bus.Common.pdb
+D:\repository\Diana\ACC.Backend\Bus\ACC.Bus.Common\obj\Debug\net6.0\ref\ACC.Bus.Common.dll
