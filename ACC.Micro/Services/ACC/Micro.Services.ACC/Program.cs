@@ -3,6 +3,8 @@ using Micro.Services.ACC.Data;
 using Micro.Services.ACC.Repository;
 using Micro.Services.ACC.Services;
 using HealthChecks.UI.Client;
+using Micro.Services.ACC.EventBusConsumer;
+using ACC.Bus.Common.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,14 +40,16 @@ void ConfiguServices(IServiceCollection services)
 
     // MassTransit-RabbitMQ Configuration ---Subscriber-----
     services.AddMassTransit(config => {
+        config.AddConsumer<CreateUserEventConsumer>();
         config.UsingRabbitMq((ctx, cfg) => {
             cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]);
-
-            //cfg.UseHealthCheck(ctx);
+            cfg.ReceiveEndpoint(EventBusConstant.CreateUserEventQueue, x =>
+            {
+                x.ConfigureConsumer<CreateUserEventConsumer>(ctx);
+            });
         });
     });
 
-    //services.AddMassTransitHostedService();
 
 
     services.AddScoped<IACCdbContext, AccdbContext>();

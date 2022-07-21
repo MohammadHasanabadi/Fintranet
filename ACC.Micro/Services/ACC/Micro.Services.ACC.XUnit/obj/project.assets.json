@@ -2413,10 +2413,21 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "ACC.Bus.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ACC.Bus.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ACC.Bus.Common.dll": {}
+        }
+      },
       "Micro.Services.ACC/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "ACC.Bus.Common": "1.0.0",
           "AspNetCore.HealthChecks.UI.Client": "6.0.4",
           "MassTransit": "8.0.5",
           "MassTransit.AspNetCore": "7.3.1",
@@ -8097,6 +8108,11 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "ACC.Bus.Common/1.0.0": {
+      "type": "project",
+      "path": "../../../Bus/ACC.Bus.Common/ACC.Bus.Common.csproj",
+      "msbuildProject": "../../../Bus/ACC.Bus.Common/ACC.Bus.Common.csproj"
     },
     "Micro.Services.ACC/1.0.0": {
       "type": "project",

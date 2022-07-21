@@ -737,6 +737,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "ACC.Bus.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ACC.Bus.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ACC.Bus.Common.dll": {}
+        }
       }
     }
   },
@@ -2103,10 +2113,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ACC.Bus.Common/1.0.0": {
+      "type": "project",
+      "path": "../../../Bus/ACC.Bus.Common/ACC.Bus.Common.csproj",
+      "msbuildProject": "../../../Bus/ACC.Bus.Common/ACC.Bus.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ACC.Bus.Common >= 1.0.0",
       "AspNetCore.HealthChecks.UI.Client >= 6.0.4",
       "MassTransit >= 8.0.5",
       "MassTransit.AspNetCore >= 7.3.1",
@@ -2146,7 +2162,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\ACC.Bus.Common.csproj": {
+              "projectPath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Bus\\ACC.Bus.Common\\ACC.Bus.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
