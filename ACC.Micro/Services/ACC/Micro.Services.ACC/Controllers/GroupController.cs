@@ -29,30 +29,24 @@ namespace Micro.Services.ACC.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-           var result= await _groupService.GetAllGroups();
+            var result = await _groupService.GetAllGroups();
 
-            if(result.Any())
-            {
-                //_endpoint.Publish()
-                return Ok(result);
 
-            }
+            return Ok(result);
 
-            return NotFound();
+
         }
 
         [HttpPost]
         public async Task<ActionResult> CreateGroup(GroupDTO groupDTO)
         {
-            if (groupDTO == null)
-                return null;
 
-            var result= await _groupService.CreateGroup(groupDTO);
+            var result = await _groupService.CreateGroup(groupDTO);
 
-            if (result)
-                return Ok(groupDTO);
 
-            return BadRequest();
+            return Ok(groupDTO);
+
+
         }
     }
 }

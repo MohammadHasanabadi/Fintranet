@@ -5,6 +5,8 @@ using Micro.Services.ACC.Services;
 using HealthChecks.UI.Client;
 using Micro.Services.ACC.EventBusConsumer;
 using ACC.Bus.Common.Common;
+using static GrpcService.Greeter;
+using Micro.Services.ACC.GrpcServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,6 +39,10 @@ app.Run();
 
 void ConfiguServices(IServiceCollection services)
 {
+    // Grpc Configuration
+    services.AddGrpcClient<GreeterClient>
+                (o => o.Address = new Uri(builder.Configuration["GrpcSettings:url"]));
+    services.AddScoped<GreatGrpcService>();
 
     // MassTransit-RabbitMQ Configuration ---Subscriber-----
     services.AddMassTransit(config => {

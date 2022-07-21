@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XSOb/QGpB+lP9E5qgNuvqByKeJN9uZPRnFXjkJr1+JA=",
+  "Source": "Micro.Services.Store",
+  "BasePath": "_content/Micro.Services.Store",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

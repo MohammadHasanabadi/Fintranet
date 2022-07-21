@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "GrpcService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5168",
+      "dotnetRunMessages": true
+    }
+  }
+}

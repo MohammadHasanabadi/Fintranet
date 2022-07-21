@@ -29,22 +29,14 @@ namespace Micro.Services.Account.Controllers
         [Route("CreateUser")]
         public async Task<bool> CreateUser(CreateUserCommand param)
         {
-            try
-            {
-                await _mediator.Send(param);
 
-                var eventData =_mapper.Map<UserCreateEvent>(param);
+            await _mediator.Send(param);
+
+            var eventData = _mapper.Map<UserCreateEvent>(param);
 
 
-                await _publishEndpoint.Publish(eventData);
+            await _publishEndpoint.Publish(eventData);
 
-               
-            }
-            catch (Exception ex)
-            {
-
-            }
-           
 
             return true;
 
