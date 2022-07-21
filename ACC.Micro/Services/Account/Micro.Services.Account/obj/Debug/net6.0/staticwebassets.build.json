@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CP/mZ+YYWHdrsCZOCWV0fDutk5tY845RaNp5Yx/s+FY=",
+  "Source": "Micro.Services.Account",
+  "BasePath": "_content/Micro.Services.Account",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

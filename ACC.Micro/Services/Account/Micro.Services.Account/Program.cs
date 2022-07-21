@@ -2,6 +2,7 @@
 using Account.Application;
 using Account.Infrastructure;
 using MassTransit;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,9 @@ builder.Services.AddApplicationDependency();
 builder.Services.AddInfrastructureServices();
 
 builder.Services.AddControllers();
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
 
 
 builder.Services.AddMassTransit(config =>

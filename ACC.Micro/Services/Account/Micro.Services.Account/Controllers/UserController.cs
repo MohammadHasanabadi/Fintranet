@@ -2,6 +2,7 @@
 using Account.Application.Features;
 using Account.Domain.Entities;
 using AutoMapper;
+using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,14 +14,14 @@ namespace Micro.Services.Account.Controllers
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IPublisher _publisher;
+        private readonly IPublishEndpoint _publishEndpoint;
         private readonly IMapper _mapper;
 
 
-        public UserController(IMediator mediat, IPublisher publisher, IMapper mapper)
+        public UserController(IMediator mediat, IPublishEndpoint publisher, IMapper mapper)
         {
             _mediator = mediat;
-            _publisher = publisher;
+            _publishEndpoint = publisher;
             _mapper = mapper;
         }
 
@@ -28,10 +29,22 @@ namespace Micro.Services.Account.Controllers
         [Route("CreateUser")]
         public async Task<bool> CreateUser(CreateUserCommand param)
         {
-            await _mediator.Send(param);
+            try
+            {
+                await _mediator.Send(param);
 
-            var eventData = _mapper.Map<UserCreateEvent>(param);
-            await _publisher.Publish(eventData);
+                var eventData =_mapper.Map<UserCreateEvent>(param);
+
+
+                await _publishEndpoint.Publish(eventData);
+
+               
+            }
+            catch (Exception ex)
+            {
+
+            }
+           
 
             return true;
 

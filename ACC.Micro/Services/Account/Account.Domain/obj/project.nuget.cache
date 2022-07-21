@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8bZK+QrhNf8ESJ41P+a2Fbzd2C/5/SUHruyNdt6PmIpTjKY2UN+TOyH2DrGlwbcNEdl0ipmla5LpG+Mk87fWSw==",
+  "success": true,
+  "projectFilePath": "D:\\repository\\Diana\\ACC.Backend\\ACC.Micro\\Services\\Account\\Account.Domain\\Account.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DEV-01\\.nuget\\packages\\mongodb.bson\\2.17.0\\mongodb.bson.2.17.0.nupkg.sha512",
+    "C:\\Users\\DEV-01\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
